@@ -36,13 +36,15 @@ while correcto == str(reciento):
 
     resultado2 = random.randint(1, 5)
 
-    
-    
+
+
     def manejo():
         manejo = open("result.txt", "a")
+        manejo.write("\n")
         manejo.write(str(resultado2))
 
     manejo()
+
 
     resultados.close()
 
@@ -50,4 +52,10 @@ while correcto == str(reciento):
 
     print(resultado2)
 
+
+
+    
+
     break
+
+print('si quieres ver tus resultados en otro momentos abre el result.txt que esta en esta carpeta')
