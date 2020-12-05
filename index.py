@@ -8,7 +8,7 @@ print('el dado se tirara en 3 segundos')
 
 time.sleep(3)
 
-resultado = random.randint(1, 5)
+resultado = random.randint(1, 6)
 
 resultados = open("result.txt", "w")
 
@@ -22,8 +22,8 @@ manejo()
 
 print(resultado)
 
-correcto = "si"
 
+correcto = "si"
 
 
 reciento = input('quieres hacer otro lanzamiento ? ')
@@ -36,15 +36,17 @@ while correcto == str(reciento):
 
     resultado2 = random.randint(1, 5)
 
-    resultados = open("result.txt", "w")
-
-    resultados.close()
-
+    
+    
     def manejo():
         manejo = open("result.txt", "a")
         manejo.write(str(resultado2))
 
     manejo()
+
+    resultados.close()
+
+   
 
     print(resultado2)
 
